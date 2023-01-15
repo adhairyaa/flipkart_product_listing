@@ -4,13 +4,13 @@ import Navbar from "../../components/navbar/Navbar";
 import products from "../../products/products.json";
 import "./ProductListing.css";
 function ProductListing() {
-  const getSortedProducts = (products, sortBy) => {
-    return sortBy === "Low To High"
-      ? products.sort((a, b) => a.price - b.price)
-      : sortBy === "High To Low"
-      ? products.sort((a, b) => b.price - a.price)
-      : products;
-  };
+  // const getSortedProducts = (products, sortBy) => {
+  //   return sortBy === "Low To High"
+  //     ? products.sort((a, b) => a.price - b.price)
+  //     : sortBy === "High To Low"
+  //     ? products.sort((a, b) => b.price - a.price)
+  //     : products;
+  // };
   return (
     <div>
       <Navbar />

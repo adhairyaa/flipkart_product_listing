@@ -1,0 +1,26 @@
+.filterBar {
+  background-color: lightgray;
+  width: 25%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  margin-top: 35px;
+  top: 20px;
+}
+.filterBar-container {
+  background-color: white;
+  border-radius: 5px;
+  margin: 8px;
+  margin-left: 8px;
+  padding: 9px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+.filterBar_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.filterBar_title button {
+  height: 20px;
+  border: none;
+}

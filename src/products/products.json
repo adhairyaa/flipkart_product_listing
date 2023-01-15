@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Men's Shirt",
+    "category": "women",
+    "Price": 2000,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1800,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1600,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1100,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1900,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1299,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1699,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "men",
+    "Price": 1399,
+    "size": "L",
+    "brand": "roadster"
+  },
+  {
+    "name": "Men's Shirt",
+    "category": "women",
+    "Price": 1199,
+    "size": "L",
+    "brand": "roadster"
+  }
+]

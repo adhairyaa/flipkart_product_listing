@@ -4,62 +4,71 @@
     "category": "women",
     "Price": 2000,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1800,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1600,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1100,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1900,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1299,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1699,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "men",
     "Price": 1399,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Men's Shirt",
     "category": "women",
     "Price": 1199,
     "size": "L",
-    "brand": "roadster"
+    "brand": "roadster",
+    "product-image": "https://images.pexels.com/photos/1661471/pexels-photo-1661471.jpeg?auto=compress&cs=tinysrgb&w=600"
   }
 ]

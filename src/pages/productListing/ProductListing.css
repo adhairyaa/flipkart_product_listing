@@ -1,4 +1,20 @@
 .productListing {
   margin-top: 60px;
   margin-left: 30%;
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+.productTile img {
+  width: 170px;
+  height: 200px;
+}
+.productTile {
+  height: 270px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+.productTile p {
+  padding-left: 5px;
+  margin: 0;
 }

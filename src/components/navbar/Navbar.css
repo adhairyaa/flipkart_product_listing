@@ -4,6 +4,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: yellow;
+  color: white;
+  font-size: 2rem;
+  font-weight: x-large;
+  padding-left: 160px;
   height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar input {
+  border: none;
+  border-radius: 2px;
+  width: 40%;
+  height: 20px;
 }

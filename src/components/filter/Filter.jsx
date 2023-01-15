@@ -1,5 +1,5 @@
 import React from "react";
-import { useStateProvider } from "../../context/StateProvider";
+// import { useStateProvider } from "../../context/StateProvider";
 import "./Filter.css";
 function Filter() {
   // const { state,dispatch } = useStateProvider();

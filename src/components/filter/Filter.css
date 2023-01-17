@@ -1,9 +1,9 @@
 .filterBar {
   background-color: lightgray;
-  width: 25%;
+  width: 20%;
   position: absolute;
   left: 0;
-  height: 100rem;
+  height: 100%;
   margin-top: 35px;
   top: 20px;
 }

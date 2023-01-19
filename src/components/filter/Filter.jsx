@@ -19,7 +19,7 @@ function Filter() {
             <input
               type="radio"
               name="sort-by"
-              onClick={() => dispatch({ type: "Low To High" })}
+              onClick={() => dispatch({ type: "LOW_TO_HIGH" })}
             ></input>{" "}
             low-to-high
           </div>
@@ -27,7 +27,7 @@ function Filter() {
             <input
               type="radio"
               name="sort-by"
-              onClick={() => dispatch({ type: "High To Low" })}
+              onClick={() => dispatch({ type: "HIGH_TO_LOW" })}
             ></input>{" "}
             high-to-low
           </div>

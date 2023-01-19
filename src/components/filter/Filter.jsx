@@ -9,7 +9,7 @@ function Filter() {
       <div className="filterBar-container">
         <div className="filterBar_title">
           <h5>Filter</h5>
-          <button>Clear</button>
+          <button onClick={dispatch({ type: "CLEAR_FILTER" })}>Clear</button>
         </div>
         <div className="sort-by-filter">
           <p>Sort-by</p>
@@ -34,12 +34,14 @@ function Filter() {
           <p>Gender</p>
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "Men Filter", payload: "Men" })}
+            onClick={() => dispatch({ type: "GENDER_FILTER", payload: "men" })}
           ></input>
           Men
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "Women Filter", payload: "Men" })}
+            onClick={() =>
+              dispatch({ type: "GENDER_FILTER", payload: "women" })
+            }
           ></input>
           Women
         </div>
@@ -47,30 +49,26 @@ function Filter() {
           <p>Size</p>
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "L" })}
+            onClick={() => dispatch({ type: "SIZE_FILTER", payload: "L" })}
           ></input>
           L
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "XL" })}
+            onClick={() => dispatch({ type: "SIZE_FILTER", payload: "XL" })}
           ></input>
           XL
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "S" })}
+            onClick={() => dispatch({ type: "SIZE_FILTER", payload: "S" })}
           ></input>
           S
           <input
             type="checkbox"
-            onClick={() => dispatch({ type: "M" })}
+            onClick={() => dispatch({ type: "SIZE_FILTER", payload: "M" })}
           ></input>
           M
         </div>
-        <div className="brand-filter">
-          <p>Size</p>
-          <input type="checkbox"></input>L<input type="checkbox"></input>XL
-          <input type="checkbox"></input>S<input type="checkbox"></input>M
-        </div>
+        <div className="brand-filter"></div>
       </div>
     </div>
   );

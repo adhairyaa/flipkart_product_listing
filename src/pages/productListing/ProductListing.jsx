@@ -6,7 +6,8 @@ import products from "../../products/products.json";
 import "./ProductListing.css";
 function ProductListing() {
   const { state } = useStateProvider();
-  const { sortBy } = state;
+  const { sortBy, gender } = state;
+
   const getSortedProducts = (products, sortBy) => {
     return sortBy === "Low To High"
       ? products.sort((a, b) => a.price - b.price)
@@ -14,20 +15,32 @@ function ProductListing() {
       ? products.sort((a, b) => b.price - a.price)
       : products;
   };
+
   const sortedProducts = getSortedProducts(products, sortBy);
-  console.log(sortBy);
+  let filteredData = sortedProducts;
+  console.log({ state });
+  const handleGenderFilter = (data, gender) => {
+    const genderFilteredData = data.filter(
+      (item) => item.category === gender.includes(item.category)
+    );
+    console.log({ genderFilteredData });
+    filteredData = genderFilteredData;
+  };
 
-  const handleGenderFilter = (sortedData,gender)=>{
+  const handleFilterFunctions = () => {
+    if (state.gender.length > 0) {
+      handleGenderFilter(filteredData, gender);
+    }
+  };
 
-    
-const genderFilteredData = sortedData.filter((Item)=>gender ==! null? Item.gender===:true)
-  }
+  handleFilterFunctions();
+
   return (
     <div>
       <Navbar />
       <Filter />
       <div className="productListing">
-        {sortedProducts.map((item) => (
+        {filteredData.map((item) => (
           <div className="productTile">
             <img src={item["product-image"]} alt="productImage"></img>
             <p>{item.name}</p>

@@ -1,6 +1,7 @@
 import { createContext, useContext, useReducer } from "react";
 
 const StateContext = createContext();
+
 const handleDispatch = (state, action) => {
   switch (action.type) {
     case "Low To High":
@@ -10,22 +11,28 @@ const handleDispatch = (state, action) => {
       });
     case "High to Low":
       return (state = { ...state, sortBy: "High to Low" });
-    case "Men Filter":
+    case "GENDER_FILTER":
       return (state = {
         ...state,
-        gender:
-          state.gender === null
-            ? [action.payload]
-            : [...state.gender, action.payload],
+        gender: state.gender.includes(action.payload)
+          ? state.gender.filter((gender) => gender !== action.payload)
+          : [...state.gender, action.payload],
       });
-    case "Women Filter":
+    case "SIZE_FILTER":
       return (state = {
         ...state,
-        gender:
-          state.gender === null
-            ? [action.payload]
-            : [...state.gender, action.payload],
+        size: state.size.includes(action.payload)
+          ? state.size.filter((size) => size !== action.payload)
+          : [...state.size, action.payload],
       });
+    case "CLEAR_FILTER":
+      return (state = {
+        ...state,
+        size: [],
+        gender: [],
+        sortBy: null,
+      });
+
     default:
       return state;
   }

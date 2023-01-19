@@ -9,7 +9,9 @@ function Filter() {
       <div className="filterBar-container">
         <div className="filterBar_title">
           <h5>Filter</h5>
-          <button onClick={dispatch({ type: "CLEAR_FILTER" })}>Clear</button>
+          <button onClick={() => dispatch({ type: "CLEAR_FILTER" })}>
+            Clear
+          </button>
         </div>
         <div className="sort-by-filter">
           <p>Sort-by</p>

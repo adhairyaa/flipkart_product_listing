@@ -9,9 +9,9 @@ function ProductListing() {
   const { sortBy, gender } = state;
 
   const getSortedProducts = (products, sortBy) => {
-    return sortBy === "Low To High"
+    return sortBy === "LOW_TO_HIGH"
       ? products.sort((a, b) => a.price - b.price)
-      : sortBy === "High To Low"
+      : sortBy === "HIGH_TO_LOW"
       ? products.sort((a, b) => b.price - a.price)
       : products;
   };

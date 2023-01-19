@@ -4,13 +4,13 @@ const StateContext = createContext();
 
 const handleDispatch = (state, action) => {
   switch (action.type) {
-    case "Low To High":
+    case "LOW_TO_HIGH":
       return (state = {
         ...state,
-        sortBy: "Low To High",
+        sortBy: "LOW_TO_HIGH",
       });
-    case "High To Low":
-      return (state = { ...state, sortBy: "High To Low" });
+    case "HIGH_TO_LOW":
+      return (state = { ...state, sortBy: "HIGH_TO_LOW" });
     case "GENDER_FILTER":
       return (state = {
         ...state,

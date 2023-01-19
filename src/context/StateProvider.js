@@ -9,8 +9,8 @@ const handleDispatch = (state, action) => {
         ...state,
         sortBy: "Low To High",
       });
-    case "High to Low":
-      return (state = { ...state, sortBy: "High to Low" });
+    case "High To Low":
+      return (state = { ...state, sortBy: "High To Low" });
     case "GENDER_FILTER":
       return (state = {
         ...state,

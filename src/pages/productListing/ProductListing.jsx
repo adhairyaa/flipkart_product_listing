@@ -6,7 +6,7 @@ import products from "../../products/products.json";
 import "./ProductListing.css";
 function ProductListing() {
   const { state } = useStateProvider();
-  const { sortBy, gender } = state;
+  const { sortBy, gender, size } = state;
 
   const getSortedProducts = (products, sortBy) => {
     return sortBy === "LOW_TO_HIGH"
@@ -20,16 +20,22 @@ function ProductListing() {
   let filteredData = sortedProducts;
   console.log({ state });
   const handleGenderFilter = (data, gender) => {
-    const genderFilteredData = data.filter(
-      (item) => item.category === gender.includes(item.category)
+    const genderFilteredData = data.filter((item) =>
+      gender.includes(item.category)
     );
-    console.log({ genderFilteredData });
     filteredData = genderFilteredData;
+  };
+  const handleSizeFilter = (data, size) => {
+    const sizeFilteredData = data.filter((item) => size.includes(item.size));
+    filteredData = sizeFilteredData;
   };
 
   const handleFilterFunctions = () => {
     if (state.gender.length > 0) {
       handleGenderFilter(filteredData, gender);
+    }
+    if (state.size.length > 0) {
+      handleSizeFilter(filteredData, size);
     }
   };
 
@@ -44,7 +50,7 @@ function ProductListing() {
           <div className="productTile">
             <img src={item["product-image"]} alt="productImage"></img>
             <p>{item.name}</p>
-            <p>{item.Price}</p>
+            <p>{item.price}</p>
             <p>free Delivery</p>
           </div>
         ))}

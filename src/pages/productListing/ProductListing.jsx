@@ -46,6 +46,9 @@ function ProductListing() {
       <Navbar />
       <Filter />
       <div className="productListing">
+        <div className="product-number">
+          <h2>No. of products showing ( {filteredData.length} )</h2>
+        </div>
         {filteredData.map((item) => (
           <div className="productTile">
             <img src={item["product-image"]} alt="productImage"></img>

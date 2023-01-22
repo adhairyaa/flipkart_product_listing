@@ -1,3 +1,9 @@
 .App {
   height: 100%;
 }
+button {
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
